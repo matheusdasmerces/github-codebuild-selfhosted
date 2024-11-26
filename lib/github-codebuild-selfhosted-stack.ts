@@ -11,7 +11,7 @@ export class GithubCodebuildSelfhostedStack extends cdk.Stack {
       projectName: 'github-codebuild-selfhosted',
       source: Source.gitHub({
         owner: 'matheusdasmerces',
-        repo: 'inversify-hexagonal-example',
+        repo: 'test-github-codebuild-selfhosted',
         webhook: true,
         webhookFilters: [
           FilterGroup.inEventOf(EventAction.WORKFLOW_JOB_QUEUED),
